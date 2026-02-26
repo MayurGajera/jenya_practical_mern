@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-['Space_Grotesk'] antialiased bg-slate-900 text-slate-100;
+  }
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: theme("colors.slate.900");
+}
+::-webkit-scrollbar-thumb {
+  background: theme("colors.slate.700");
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: theme("colors.fuchsia.600");
+}
